@@ -1,83 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agario</title>
+    <meta name="description" content="Агарио - шарики онлайн, лучшая Агарио игра в браузере. Никаких скачиваний, просто начните играть в Агарио прямо сейчас!">
+    <meta name="keywords" content="агарио">
+    <meta name="robots" content="index, follow"> <!-- Разрешаем индексацию и переход по ссылкам -->
+    <link rel="canonical" href="https://агарио.рф/"> <!-- Указываем канонический URL -->
+    <link rel="icon" href="https://agar.su/icon.svg" type="image/x-icon">
+    <meta name="yandex-verification" content="d2648e3bc2d73129" />
+    
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-
-<!-- SEO: канонический URL указывает на главный сайт -->
-<link rel="canonical" href="https://agar.su/" />
-
-
-<!-- Иконка -->
-<link rel="icon" type="image/svg+xml" href="https://agar.su/icon.svg" />
-<link rel="apple-touch-icon" href="https://agar.su/icon.svg" />
-
-
-<!-- Title & description (коротко, но информативно) -->
-<title>Agar.su</title>
-<meta name="description" content="Agar.su - лучше чем agario" />
-  <meta name="keywords" content="game, agario">
-<meta name="robots" content="index, follow">
-
-<!-- Social / OpenGraph -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Agar.su" />
-<meta property="og:description" content="Agar.su - лучше чем agario" />
-<meta property="og:url" content="https://agar.su/" />
-<meta property="og:image" content="https://agar.su/icon.svg" />
-
-
-<!-- Schema.org JSON-LD -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "WebSite",
-"name": "Agar",
-"url": "https://agar.su/",
-"potentialAction": {
-"@type": "SearchAction",
-"target": "https://agar.su/search?q={search_term_string}",
-"query-input": "required name=search_term_string"
-}
-}
+   ym(103054313, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
 </script>
-
-
-<!-- Чтобы поисковики быстрее поняли: не блокируем индексацию -->
-<meta name="robots" content="index,follow" />
-
-
-<!-- Быстрый редирект: сначала мета-refresh (noscript-safe), затем JS replace -->
-<meta http-equiv="refresh" content="1;url=https://agar.su/" />
-
-
-<style>
-body{font-family:Inter,Arial,Helvetica,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#0b1220;color:#e6eef8}
-.card{max-width:720px;padding:28px;border-radius:12px;background:rgba(255,255,255,0.03);box-shadow:0 6px 30px rgba(0,0,0,0.4);text-align:center}
-a{color:inherit;text-decoration:underline}
-img.icon{width:84px;height:84px;margin-bottom:12px}
-</style>
+<noscript><div><img src="" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    <style>
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background: #0b1220;
+            color: #e6eef8;
+            align-items: center;
+        }
+        .ad-top, .ad-bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ad-top { height: 90px; }
+        .ad-bottom { height: 90px; }
+        .card {
+            max-width: 720px;
+            padding: 28px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.03);
+            box-shadow: 0 6px 30px rgba(0,0,0,0.4);
+            text-align: center;
+            margin: 20px 0;
+        }
+        .play-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 18px 36px;
+            font-size: 1.5em;
+            color: #fff;
+            background: #006cf1;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+        .play-button:hover {
+            transform: scale(1.05);
+        }
+        img.icon {
+            width: 84px;
+            height: 84px;
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 <body>
+<!-- Реклама сверху -->
+<div class="ad-top" id="ya-top-ad"></div>
+
 <div class="card">
-<img class="icon" src="https://agar.su/icon.svg" alt="Agar logo" />
-<h1>Agar.su — перенаправление на основной сайт</h1>
-<p>Вы будете перенаправлены на <a href="https://agar.su/">https://agar.su/</a>. Если переадресация не сработала, нажмите ссылку.</p>
-<p style="font-size:0.9em;opacity:0.8">(Переход выполняется в 301/редирект идеале)</p>
+    <img class="icon" src="https://agar.su/icon.svg" alt="Agar logo" />
+    <h1>Agar.su — Начать играть</h1>
+    <p>Нажмите кнопку ниже, чтобы перейти на основной сайт и начать игру</p>
+    <a href="https://agar.su/" class="play-button">Играть</a>
 </div>
-
-
-<script>
-// JS-редирект: replace чтобы не оставлять в истории
-try{
-// Небольшая задержка чтобы дать время роботам прочитать meta/canonical
-setTimeout(function(){
-// Используем replace; если хотите 301-имитацию, настроьте сервер.
-window.location.replace('https://agar.su/');
-}, 900);
-}catch(e){/* ignore */}
-</script>
-</body>
-
 </html>
+
